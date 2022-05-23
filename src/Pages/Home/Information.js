@@ -8,7 +8,7 @@ import phone from '../../images/phone.png'
 const Information = () => {
     return (
         <div >
-            <h1 className='text-center px-4 text-primary font-bold m-4 text-xl'>Our Information</h1>
+            <h1 className='text-center px-4 text-primary font-bold m-4 text-4xl'>Our Information</h1>
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
         <InformationCurd cardTitle="Opening Hours" bgClass="bg-accent" img={clock}></InformationCurd>    
         <InformationCurd cardTitle="Our Locations" bgClass="bg-primary" img={location}></InformationCurd>    

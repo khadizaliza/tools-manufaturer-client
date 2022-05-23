@@ -1,5 +1,6 @@
 import React from 'react';
 import Bannar from './Bannar';
+import Footer from './Footer';
 import HomeDelivery from './HomeDelivery';
 import Information from './Information';
 
@@ -9,6 +10,7 @@ const Home = () => {
            <Bannar></Bannar> 
            <Information></Information>
            <HomeDelivery></HomeDelivery>
+           <Footer></Footer>
         </div>
     );
 };
