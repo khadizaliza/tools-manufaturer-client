@@ -4,6 +4,8 @@ import './App.css';
 import Home from './Pages/Home/Home';
 import Navbar from './Pages/Home/Shared/Navbar';
 import NotFound from './Pages/NotFound';
+import Blog from './Pages/Blog'
+import MyPortfolio from './Pages/MyPortfolio';
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
       {/* <Route path='/appoinment' element={<Appoinment></Appoinment>}></Route>
       <Route path='/login' element={<Login></Login>}></Route>
       <Route path='/signup' element={<SignUp></SignUp>}></Route> */}
+      <Route path='/blog' element={<Blog></Blog>}></Route>
+      <Route path='/myportfolio' element={<MyPortfolio></MyPortfolio>}></Route>
+
       <Route path='/*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
