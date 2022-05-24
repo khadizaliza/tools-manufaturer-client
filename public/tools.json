@@ -1,0 +1,56 @@
+[
+    {
+      "_id": 1,
+      "name": "Monitor",
+      "img": "https://i.ibb.co/8BVWB3L/monitor.webp",
+      "price": 2100,
+      "description": "World Best Product",
+      "minimum-order-quentity": "10 pice",
+      "available-quentity": "100 pice"
+    },
+    {
+      "_id": 2,
+      "name": "PC-case",
+      "img": "https://i.ibb.co/0fnJvz3/pc-case.jpg",
+      "price": 5000,
+      "description": "World Best Product",
+      "minimum-order-quentity": "10 pice",
+      "available-quentity": "100 pice"
+    },
+    {
+      "_id": 3,
+      "name": "Mouse",
+      "img": "https://i.ibb.co/NtjFCRM/mouse.webp",
+      "price": 400,
+      "description": "World Best Product",
+      "minimum-order-quentity": "10 pice",
+      "available-quentity": "100 pice"
+      },
+    {
+      "_id": 4,
+      "name": "Monitor-Holder",
+      "img": "https://i.ibb.co/HhNzN11/monitor-holder.jpg",
+      "price": 2100,
+      "description": "World Best Product",
+      "minimum-order-quentity": "10 pice",
+      "available-quentity": "100 pice"
+    },
+    {
+      "_id": 5,
+      "name": "Key-board",
+      "img": "https://i.ibb.co/1ZjQzfk/key-board.jpg",
+      "price": 700,
+      "minimum-order-quentity": "10 pice",
+      "available-quentity": "100 pice",
+      "description": "World Best Product"
+    },
+    {
+      "_id": 6,
+      "name": "Hardware",
+      "img": "https://i.ibb.co/kGPWcZ4/hardware.jpg",
+      "price": 11000,
+      "description": "World Best Product",
+      "minimum-order-quentity": "10 pice",
+      "available-quentity": "100 pice"
+    }
+  ]
