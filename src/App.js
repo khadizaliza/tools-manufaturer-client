@@ -11,6 +11,8 @@ import Login from './Pages/Login/Login';
 import SignUp from './Pages/Login/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth';
 import Reviews from './Pages/Home/Reviews';
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
     <div>
       <Navbar></Navbar>
       <Routes>
+      <Route path='/' element={<Home></Home>}></Route>
       <Route path='/home' element={<Home></Home>}></Route>
       
       {/* <Route path='/appoinment' element={<Appoinment></Appoinment>}></Route> */}
@@ -32,7 +35,7 @@ function App() {
 
       <Route path='/*' element={<NotFound></NotFound>}></Route>
       </Routes>
-      
+      <ToastContainer />
     </div>
   );
 }

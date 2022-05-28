@@ -1,6 +1,7 @@
 import React from 'react';
 import auth from '../../firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 
 const BookingModal = ({buy, setBuy}) => {
     const {name, minimumOrderQuentity} = buy;
@@ -15,7 +16,26 @@ const BookingModal = ({buy, setBuy}) => {
             customarName:user.namedisplayName,
             phone:event.target.phone.value
         }
-        setBuy(null);
+
+        fetch('http://localhost:5000/booking', {
+            method: 'POST',
+            headers:{
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(booking)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            if(data.success){
+                toast(`booking is success, ${name}`)
+            }
+            else{
+                toast(`already booked, ${name}`)
+            }
+            setBuy(null);
+        })
+        
     }
     return (
         <div>
