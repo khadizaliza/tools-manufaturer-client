@@ -1,4 +1,7 @@
 import React from 'react';
+import PruchaseCurd from '../Login/PruchaseCurd';
+
+
 import Bannar from './Bannar';
 import BusinessSummares from './BusinessSummares';
 
@@ -15,6 +18,7 @@ const Home = () => {
            <HomeDelivery></HomeDelivery>
            <Tools></Tools>
            <BusinessSummares></BusinessSummares>
+           
            <Footer></Footer>
         </div>
     );

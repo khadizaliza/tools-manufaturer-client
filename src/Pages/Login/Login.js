@@ -2,9 +2,10 @@ import React from 'react';
 
 import { useForm } from "react-hook-form";
 import {  useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loding from '../Home/Shared/Loding';
 import auth from '../../firebase.init';
+import PruchaseCurd from './PruchaseCurd';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -15,8 +16,12 @@ const Login = () => {
       loading,
       error,
     ] = useSignInWithEmailAndPassword(auth);
-
     let signInError;
+    const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
+
+    
     if(loading || gLoading){
       return <Loding></Loding>
     }
@@ -25,11 +30,12 @@ const Login = () => {
     }
 
     if(user || gUser){
-        console.log(user || gUser);
+      navigate(from, { replace: true });
     }
     const onSubmit = data => {
       console.log(data);
       signInWithEmailAndPassword(data.email, data.password);
+      //navigate('/purchase');
     }
     return (
         <div className='flex h-screen justify-center items-center'>
@@ -96,7 +102,9 @@ const Login = () => {
      class="btn btn-outline btn-accent">Contineu with google</button>
   </div>
 </div>
+
         </div>
+        
     );
 };
 

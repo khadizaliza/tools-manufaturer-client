@@ -5,7 +5,7 @@ const Service = ({service}) => {
     const {name, price, availableQuentity, img, minimumOrderQuentity, description} = service;
     const navigate = useNavigate();
     const navigateToPurchase = id =>{
-        navigate(`/service/${id}`)
+        navigate('/login')
     }
     return (
         <div class="card lg:max-w-lg bg-base-100 shadow-xl">

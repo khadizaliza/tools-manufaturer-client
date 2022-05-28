@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BusinessSummary = ({summary}) => {
-   console.log(summary)
+   //console.log(summary)
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">

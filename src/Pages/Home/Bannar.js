@@ -13,7 +13,9 @@ const Bannar = () => {
           </div>
         </div>
       </div>
+      
     );
 };
+
 
 export default Bannar;
