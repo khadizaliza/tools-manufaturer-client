@@ -16,6 +16,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyBooking from './Pages/Dashboard/MyBooking';
 import MyReview from './Pages/Dashboard/MyReview';
+import Users from './Pages/Dashboard/Users';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
 
         <Route index element={<MyBooking></MyBooking>}></Route>
         <Route path='review' element={<MyReview></MyReview>}></Route>
+        <Route path='users' element={<Users></Users>}></Route>
       </Route>
      <Route path='/blog' element={<Blog></Blog>}></Route>
      <Route path='/reviews' element={<Reviews></Reviews>}></Route>

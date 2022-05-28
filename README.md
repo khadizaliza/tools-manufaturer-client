@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Computer Tools Manufaturer Web-site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was create with bootstrapped, html, css, react, javascript, firebase, mongodb.It is a computer tools manufaturer website.
+Live link:['']
 
 ## Available Scripts
 
