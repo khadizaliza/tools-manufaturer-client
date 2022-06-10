@@ -4,7 +4,7 @@ import Loding from '../Home/Shared/Loding';
 import UserRow from './UserRow';
 
 const Users = () => {
-    const {data: users, isLoading} = useQuery('users', () => fetch('http://localhost:5000/service').then(res=>res.json()))
+    const {data: users, isLoading} = useQuery('users', () => fetch('https://dry-refuge-43461.herokuapp.com/service').then(res=>res.json()))
     if(isLoading){
         return <Loding></Loding>
     }

@@ -3,7 +3,8 @@ import React from 'react';
 const MyReview = () => {
     return (
         <div>
-            <h2>review</h2>
+            <h2>This is Review</h2>
+            <h3>My Reviews</h3>
         </div>
     );
 };

@@ -17,6 +17,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import MyBooking from './Pages/Dashboard/MyBooking';
 import MyReview from './Pages/Dashboard/MyReview';
 import Users from './Pages/Dashboard/Users';
+import About from './Pages/Home/About';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Routes>
       <Route path='/' element={<Home></Home>}></Route>
       <Route path='/home' element={<Home></Home>}></Route>
+      <Route path='/about' element={<About></About>}></Route>
       
       {/* <Route path='/appoinment' element={<Appoinment></Appoinment>}></Route> */}
       <Route path='/login' element={<Login></Login>}></Route>

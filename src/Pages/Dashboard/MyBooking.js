@@ -8,7 +8,7 @@ const MyBooking = () => {
 
     useEffect( () =>{
         if(user) {
-            fetch(`http://localhost:5000/service?customar=${user.email}`)
+            fetch(`https://dry-refuge-43461.herokuapp.com/service?customar=${user.email}`)
         .then(res=>res.json())
         .then(data => setBooked(data));
         }

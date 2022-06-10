@@ -17,7 +17,7 @@ const BookingModal = ({buy, setBuy}) => {
             phone:event.target.phone.value
         }
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://dry-refuge-43461.herokuapp.com/booking', {
             method: 'POST',
             headers:{
                 'content-type': 'application/json'
